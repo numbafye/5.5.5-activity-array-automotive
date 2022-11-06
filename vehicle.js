@@ -51,27 +51,12 @@ class Vehicle {
             alert("You need to start the engine first.");
         }
     }
+
     stop() {
-        this.started = false;
+        console.log('engine off')
+        this.started=false;
     }
-
-    drive() {
-        accelerate();
-    }
-    brake() {
-        decelerate();
-    }
-
-    autoPark()
-    {
-
-    }
-
-    autoDrive()
-    {
-      
-    }
-
+    
     typeOfVehicle(wheels) {
         if (this.numberOfWheels == 8 && 8 == wheels) {
             console.log(this.model + " " + this.make + " is a Truck");
